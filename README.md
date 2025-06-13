@@ -22,6 +22,35 @@ Uma API desenvolvida com Django Rest Framework para gerenciamento de contratos e
 - SQLite (padrão)
 
 ---
+🔗 Endpoints da API
+📌 Criar Contrato (com parcelas)
+POST /api/contratos/
+
+
+🔎 Consultar Contratos
+GET /api/contratos/
+
+Filtros disponíveis:
+id (ex: /api/contratos/?id=1)
+
+cpf (ex: /api/contratos/?cpf=12345678901)
+
+data_emissao (ex: /api/contratos/?data_emissao=2025-06-10)
+
+estado (ex: /api/contratos/?estado=SP)
+
+📊 Resumo dos Contratos
+GET /api/resumo/
+
+Filtros:
+cpf
+data_emissao
+estado
+
+🧪 Testes
+python manage.py test
+
+
 
 ## ⚙️ Instalação
 
